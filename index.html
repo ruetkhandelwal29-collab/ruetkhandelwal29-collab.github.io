@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruet Khandelwal - Full-Stack Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 2px solid #00d4ff;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            margin: 3rem 0;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #00d4ff;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #00d4ff;
+            padding-bottom: 0.5rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: rgba(45, 45, 68, 0.8);
+            border-left: 4px solid #00d4ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+        .project-card h3 {
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+        .project-card .tech {
+            color: #88cc88;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #00d4ff;
+            color: #1e1e2e;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .project-card a:hover {
+            background: #00b8d4;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .skill-badge {
+            background: #00d4ff;
+            color: #1e1e2e;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 2px solid #00d4ff;
+            margin-top: 3rem;
+            color: #b0b0b0;
+        }
+        .social-links {
+            margin: 1.5rem 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            color: #00d4ff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #00b8d4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👋 Ruet Khandelwal</h1>
+        <p>Full-Stack Developer | AI Enthusiast | Building Products That Matter</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="section">
+            <h2>🎯 About Me</h2>
+            <p>
+                B.Tech student in Artificial Intelligence & Data Science from MBM University (2029).
+                I build full-stack applications with React, Node.js, and Python. Passionate about system design,
+                API architecture, and shipping products that solve real problems.
+            </p>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="section">
+            <h2>🚀 Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>ToolForge</h3>
+                    <p>AI Tool Marketplace — A unified platform for discovering and composing AI-powered tools.</p>
+                    <div class="tech">React.js • Node.js • Express.js • Gemini API</div>
+                    <a href="https://github.com/ruetkhandelwal29-collab/toolforge" target="_blank">View Code</a>
+                    <a href="https://toolforge-demo.example.com" target="_blank">Live Demo</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>MARVEL</h3>
+                    <p>Campus Automation System — Digitizing college operations with FastAPI backend.</p>
+                    <div class="tech">Python • FastAPI • SQLite • REST APIs</div>
+                    <a href="https://github.com/ruetkhandelwal29-collab/campus_automation_system" target="_blank">View Code</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>NarcScan</h3>
+                    <p>Coming soon — An innovative TypeScript project in development.</p>
+                    <div class="tech">TypeScript • Node.js</div>
+                    <a href="https://github.com/ruetkhandelwal29-collab/NarcScan" target="_blank">View Code</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2>💻 Tech Stack</h2>
+            <div class="skills">
+                <div class="skill-badge">JavaScript</div>
+                <div class="skill-badge">React.js</div>
+                <div class="skill-badge">Node.js</div>
+                <div class="skill-badge">Express.js</div>
+                <div class="skill-badge">Python</div>
+                <div class="skill-badge">FastAPI</div>
+                <div class="skill-badge">C++</div>
+                <div class="skill-badge">SQL</div>
+                <div class="skill-badge">REST APIs</div>
+                <div class="skill-badge">Git</div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section">
+            <h2>📊 GitHub Stats</h2>
+            <p>GitHub stats automatically updated from your profile.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/ruetkhandelwal29-collab" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ruet-khandelwal-101353384" target="_blank">LinkedIn</a>
+            <a href="mailto:ruetkhandelwal29@gmail.com" target="_blank">Email</a>
+            <a href="https://leetcode.com/u/ruet_29/" target="_blank">LeetCode</a>
+        </div>
+        <p>&copy; 2026 Ruet Khandelwal. Building the future, one line at a time.</p>
+    </footer>
+</body>
+</html>
