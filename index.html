@@ -25,7 +25,7 @@
                     </div>
                     <ul class="navlinks">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="https://github.com/ruetkhandelwal29-collab" target="_blank" rel="noopener noreferrer">Projects</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
                         <li><a href="https://leetcode.com/u/ruet_29/" target="_blank" rel="noopener noreferrer">Coding</a></li>
                         <li><a href="mailto:ruetkhandelwal29@gmail.com">Contact</a></li>
@@ -43,8 +43,8 @@
                     <h1>Ruet Khandelwal</h1>
                     <p>B.Tech student in Artificial Intelligence &amp; Data Science at MBM University, Jodhpur. Building full-stack and backend applications with React.js, Node.js, and FastAPI. Passionate about AI-powered workflows, scalable architectures, and problem solving in Data Structures &amp; Algorithms.</p>
                     <div class="btn-group">
-                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn active">View Resume</a>
-                        <a href="mailto:ruetkhandelwal29@gmail.com" class="btn">Contact Me</a>
+                        <a href="#portfolio" class="btn active">View Portfolio</a>
+                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn">View Resume</a>
                     </div>
                     <div class="social">
                         <a href="https://github.com/ruetkhandelwal29-collab" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
@@ -57,6 +57,84 @@
         </div>
      </div>
 
+     <!-- Portfolio / Projects Section -->
+     <section class="portfolio-section" id="portfolio">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>My <span>Portfolio</span></h2>
+                <p>Selected engineering projects spanning AI workflows, campus automation, and web development.</p>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Project 1: ToolForge -->
+                <div class="portfolio-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <h3>ToolForge</h3>
+                    <span class="project-tag">AI Tool Marketplace</span>
+                    <p>A unified full-stack platform where users discover, run, and compose AI-powered tools into reusable workflows with server-side AI key management.</p>
+                    <div class="card-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>REST APIs</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/ruetkhandelwal29-collab/toolforge" target="_blank" rel="noopener noreferrer" class="card-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: MARVEL -->
+                <div class="portfolio-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3>Campus Automation System (MARVEL)</h3>
+                    <span class="project-tag">Backend &amp; Campus ERP</span>
+                    <p>An integrated platform that digitizes university operations across student attendance, academic scheduling, and admin workflows with 15+ endpoints.</p>
+                    <div class="card-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>SQLite</span>
+                        <span>REST APIs</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/ruetkhandelwal29-collab/campus_automation_system" target="_blank" rel="noopener noreferrer" class="card-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: NarcScan -->
+                <div class="portfolio-card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>NarcScan</h3>
+                    <span class="project-tag">Emerging Project</span>
+                    <p>An emerging analytical tool built with modern web technologies, focusing on secure processing, typed services, and modular components.</p>
+                    <div class="card-tech">
+                        <span>TypeScript</span>
+                        <span>Node.js</span>
+                        <span>React</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/ruetkhandelwal29-collab/NarcScan" target="_blank" rel="noopener noreferrer" class="card-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Footer -->
+     <footer class="portfolio-footer">
+        <p>&copy; 2026 Ruet Khandelwal. Built with clean HTML &amp; CSS.</p>
+     </footer>
+
      <!-- Typed.js Library for dynamic typing animation -->
      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
      <script>
@@ -66,6 +144,14 @@
         togglebtn.addEventListener("click", function(){
             this.classList.toggle("click");
             nav.classList.toggle("open");
+        });
+
+        // Close mobile nav on click
+        document.querySelectorAll(".navlinks a").forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("open");
+                togglebtn.classList.remove("click");
+            });
         });
 
         var typed = new Typed(".input", {
