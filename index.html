@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruet Khandelwal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN font icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="logo-text">Ruet Khandelwal</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="https://github.com/ruetkhandelwal29-collab" target="_blank" rel="noopener noreferrer">Projects</a></li>
+                        <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                        <li><a href="https://leetcode.com/u/ruet_29/" target="_blank" rel="noopener noreferrer">Coding</a></li>
+                        <li><a href="mailto:ruetkhandelwal29@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container" id="home">
+                <div class="hero-pic">
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm a <span class="input">Full-Stack Developer</span></h5>
+                    <h1>Ruet Khandelwal</h1>
+                    <p>B.Tech student in Artificial Intelligence &amp; Data Science at MBM University, Jodhpur. Building full-stack and backend applications with React.js, Node.js, and FastAPI. Passionate about AI-powered workflows, scalable architectures, and problem solving in Data Structures &amp; Algorithms.</p>
+                    <div class="btn-group">
+                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn active">View Resume</a>
+                        <a href="mailto:ruetkhandelwal29@gmail.com" class="btn">Contact Me</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/ruetkhandelwal29-collab" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ruet-khandelwal-101353384" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/u/ruet_29/" target="_blank" rel="noopener noreferrer" title="LeetCode" aria-label="LeetCode Profile"><i class="fa-solid fa-code"></i></a>
+                        <a href="mailto:ruetkhandelwal29@gmail.com" title="Email" aria-label="Send Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Typed.js Library for dynamic typing animation -->
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Full-Stack Developer", "AI & Data Science Student", "AI Applications Builder", "DSA Practitioner"],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true
+        });
+     </script>
+</body>
+</html>
